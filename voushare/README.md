@@ -1,16 +1,28 @@
-# React + Vite
+# VouShare 🎟️
+> **"Don't Waste It. VouShare It."**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VouShare is a frontend-only digital marketplace UI prototype designed for buying, selling, and transferring unused coupons, vouchers, movie tickets, and event tickets. 
 
-Currently, two official plugins are available:
+This project was built as a proof-of-concept for an entrepreneurship/project report, demonstrating a seamless secondary-market user experience without relying on a live backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 How to Run This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+If you just cloned or downloaded this project, here is exactly how to get the UI running on your machine.
 
-## Expanding the ESLint configuration
+### 1. Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Installation & Startup
+Open your terminal (or open the project folder in VS Code and open a new terminal), and run these exact commands:
+
+```bash
+# Step 1: Navigate into the project folder (if you aren't already there)
+cd voushare
+
+# Step 2: Install all required dependencies (this reads package.json and downloads React, Vite, Tailwind, etc.)
+npm install
+
+# Step 3: Start the local development server to bring the UI online
+npm run dev
