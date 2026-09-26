@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f0ede6;
+  --color-primary: #006d77;
+  --color-primary-dark: #00585f;
+  --color-text-main: #2d3748;
+  --color-text-muted: #718096;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer utilities {
+  /* Raised Neumorphic Surface */
+  .neu-flat {
+    background: var(--color-background);
+    box-shadow: 8px 8px 16px #d8d5ce, -8px -8px 16px #ffffff;
+  }
+  
+  /* Pressed/Recessed Neumorphic Surface (for inputs) */
+  .neu-pressed {
+    background: var(--color-background);
+    box-shadow: inset 4px 4px 8px #d8d5ce, inset -4px -4px 8px #ffffff;
+  }
+
+  /* Raised Button Hover */
+  .neu-button {
+    background: var(--color-background);
+    box-shadow: 6px 6px 12px #d8d5ce, -6px -6px 12px #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .neu-button:hover {
+    box-shadow: 8px 8px 16px #d8d5ce, -8px -8px 16px #ffffff;
+  }
+
+  .neu-button:active {
+    box-shadow: inset 4px 4px 8px #d8d5ce, inset -4px -4px 8px #ffffff;
+  }
+  
+  /* Primary Solid Button */
+  .neu-primary-button {
+    background: var(--color-primary);
+    box-shadow: 6px 6px 12px #d8d5ce, -6px -6px 12px #ffffff;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .neu-primary-button:hover {
+    background: var(--color-primary-dark);
+  }
+
+  .neu-primary-button:active {
+    box-shadow: inset 4px 4px 8px #004b52, inset -4px -4px 8px #008f9c;
+  }
+}
